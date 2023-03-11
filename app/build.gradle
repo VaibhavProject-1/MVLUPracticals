@@ -6,6 +6,10 @@ plugins {
 android {
     namespace 'in.locate365.mvlucollege'
     compileSdk 33
+    
+    configurations.all {
+        resolutionStrategy { force 'androidx.core:core-ktx:1.7.0-alpha01' }
+    }
 
     defaultConfig {
         applicationId "in.locate365.mvlucollege"
